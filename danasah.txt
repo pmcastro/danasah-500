@@ -1,0 +1,41 @@
+# DanaSah 5.00 configuration file
+#
+#
+# [Opening book Prodeo/Rebel (on/off)]
+# ------------------------------------
+# Thanks to Ed Shröeder (code), Jeroen Noomen (book)
+# Tournament book is optional
+#
+ownbook		on
+mainbook	mainbook.bin
+tourbook	tourbook.bin
+#
+#
+#
+# [Table Hash Size in Mbytes]
+# ---------------------------
+# You can prove to use any value, values between 32(bullet) and 512 Mb(standard) have been
+# proven successfully.
+#
+hash	128
+#
+#
+#
+# [Bitbases Scorpio]
+# ------------------
+# Thanks to Daniel Shawul
+# For 5 men use 32 Mb cahe and only 4 men bitbases in memory --> load type 1
+# (5 men bitbases in memory need 250 Mb --> load type 3).
+#
+path		..\Tablebases\egbb\
+men		4
+cache_size	4
+load_type	1
+#
+#
+#
+# [Chess960 FRC - Castling (OO/HAha)]
+# -----------------------------------
+#This helps DanaSah to be compatible with the GUI in the variant fischerandom
+#
+castling	OO
